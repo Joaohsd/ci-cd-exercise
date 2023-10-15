@@ -19,20 +19,20 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout of code
-      - uses: actions/checkout@v3
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - name: Checkout of code
+      uses: actions/checkout@v2
 
-      # Configure node.js version to be used
-      - name: Configure Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '18' # Indicate the version that should be used
+    # Configure node.js version to be used
+    - name: Configure Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '18' # Indicate the version that should be used
 
-      # Runs npm install command in order to install dependencies
-      - name: Install dependencies
-        run: npm install
+    # Runs npm install command in order to install dependencies
+    - name: Install dependencies
+      run: npm install  # Install dependencies
 
-      # Runs npm test command in order to test code developed
-      - name: Execute tests
-        run: npm test
+    # Runs npm test command in order to test code developed
+    - name: Execute tests
+      run: npm test     # Execute tests
