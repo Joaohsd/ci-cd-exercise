@@ -1,0 +1,16 @@
+{
+  "name": "ci-cd-exercise",
+  "version": "1.0.0",
+  "description": "This repository is used in \"C214 - Engenharia de Software\" subject from INATEL. It contains an exercise that was sugested to be done in order to learn more about CI/CD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}
